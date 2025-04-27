@@ -1,0 +1,25 @@
+cost:
+  per_call_cost: 100
+  unit: ep_credits
+  uses_client_ep_key: true
+  variable_pricing_cost_formula: null
+description: Generate a survey automatically from an overall research question and
+  target population.
+endpoint: http://localhost:8001/create_survey
+name: create_survey
+parameters:
+  overall_question:
+    default_value: null
+    description: The main research question the survey aims to address
+    required: true
+    type: str
+  population:
+    default_value: null
+    description: Description of the target population for the survey
+    required: true
+    type: str
+service_returns:
+  survey:
+    coopr_url: true
+    description: An EDSL survey object
+    type: Survey
