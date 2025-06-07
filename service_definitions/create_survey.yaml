@@ -18,6 +18,11 @@ parameters:
     description: Description of the target population for the survey
     required: true
     type: str
+  num_questions:
+    default_value: null
+    description: Desired number of questions (optional)
+    required: false
+    type: int    
 service_returns:
   survey:
     coopr_url: true
