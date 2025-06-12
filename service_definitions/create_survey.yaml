@@ -6,7 +6,7 @@ cost:
   ep_username: RobinHorton
 description: Generate a survey automatically from an overall research question and
   target population.
-endpoint: https://autostudy-api-265300074750.us-central1.run.app/
+endpoint: https://autostudy-api-265300074750.us-central1.run.app/create_survey
 name: create_survey
 parameters:
   overall_question:
